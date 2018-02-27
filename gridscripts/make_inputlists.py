@@ -5,7 +5,7 @@ import os,sys
 # ------------------------------------------------------------------------
 
 #flists = ["filelists/corsika_p00.txt","filelists/corsika_p01.txt", "filelists/corsika_p02.txt"]
-flists = ["filelists/cocktail/dblist_mcc8v4_cocktail_p00.txt"]
+flists = ["filelists/cocktail/dblist_mcc8v4_cocktail_p00_ssnet.txt"]
 os.system("mkdir inputlists")
 
 joblist = open("joblist.txt",'w')
