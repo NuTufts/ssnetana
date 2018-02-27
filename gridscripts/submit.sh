@@ -2,7 +2,7 @@
 #
 #SBATCH --job-name=anass
 #SBATCH --output=log_anass.txt
-#SBATCH --ntasks=1
+#SBATCH --ntasks=10
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=2000
 
