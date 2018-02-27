@@ -1,7 +1,7 @@
 import os,sys
 import ROOT as rt
 
-OUTDIR="/cluster/kappa/90-days-archive/wongjiradlab/twongj01/ssnetana"
+OUTDIR="/cluster/kappa/90-days-archive/wongjiradlab/twongj01/ssnetana/output"
 
 # read in joblist
 #fjob = open("joblist.txt",'r')
@@ -20,11 +20,11 @@ print "num jobids: ",len(jobids)
 completelist = []
 missinglist = []
 for jobid in jobids:
-    rfile = "%s/ssnet_retraining_%06d.root"%(OUTDIR,jobid)
+    rfile = "%s/ssnetana_%06d.root"%(OUTDIR,jobid)
     if not os.path.exists(rfile):
         missinglist.append(jobid)
         continue
-    ttree = rt.TChain("image2d_adc_tree")
+    ttree = rt.TChain("tssnet")
     ttree.Add(rfile)
     nentries = 0
     try:
