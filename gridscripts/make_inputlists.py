@@ -4,7 +4,8 @@ import os,sys
 # specifically, pubs/dlleepubs/utils/dump_
 # ------------------------------------------------------------------------
 
-flists = ["filelists/corsika_p00.txt","filelists/corsika_p01.txt", "filelists/corsika_p02.txt"]
+#flists = ["filelists/corsika_p00.txt","filelists/corsika_p01.txt", "filelists/corsika_p02.txt"]
+flists = ["filelists/cocktail/dblist_mcc8v4_cocktail_p00.txt"]
 os.system("mkdir inputlists")
 
 joblist = open("joblist.txt",'w')
